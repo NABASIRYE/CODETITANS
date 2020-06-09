@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, 
+    initial-scale=1.0">
+    <title>Code Titans</title>
+    <script src="https://kit.fontawesome.com/6416f079ba.js" crossorigin="anonymous"></script>
+<style>
+    
+    *{
+   margin: opx;
+   text-align: center;
+   
+}
+p{ 
+    font-size: 20px;
+}
+
+
+
+/* Navbar container */
+.navbar {
+    overflow: hidden;
+    background-color: #1684C7;
+    width: 1100px;
+    padding-bottom: 10px;
+    border-radius: 15px;
+    margin-left: 135px;
+    font-family: Arial;
+    margin-bottom: 20px;
+  }
+  
+    
+
+
+  /* Links inside the navbar */
+  .navbar a {
+    float: left;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding: 12px 40px ;
+    text-decoration: none;
+    margin-top: 25px;
+  }
+  
+  /* The dropdown container */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+    padding-top: 20px;
+    font-size: 20px;
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 15px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  
+  /* Add a red background color to navbar links on hover */
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color:#EE3324;
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  #logo{
+    float: left;
+    width: 210px;
+ 
+}
+
+#search1{
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 2px;
+    transform: skewY(0deg);
+    border:none;
+    text-align: start;
+}
+
+
+#searchbar {
+        float: right;
+      padding-right: 10px;
+        border-color: none;
+}
+#button1{margin-top: 40px;
+    border: none;
+    border-radius: 2px;
+    padding: 5px 0px;
+    font-size: 15px;
+    background-color: #1684C7;
+}
+/*COMPANY FOOTER*/
+.portfooter{background-color:  #1684c7;
+             display: flex;
+             justify-content: space-evenly;
+             color: white;
+             }
+
+.footersection a{
+    color: white;
+      display: inline-block;
+      padding: 17px 10px;
+      font-size: 25px;
+      text-decoration: none;
+      }
+#midlinks a:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+/* ISAAC BODY CONTENT*/
+.isaactop{
+padding: 2px 10px;
+  display: flex;
+}
+.isaacimage{
+  margin: auto;
+flex: 1;
+}
+#zach{
+  width: 300px;
+  height: auto;
+}
+h3{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+    text-decoration: underline;
+
+}
+p{
+    line-height: 1.8em;
+    font-family: sans-serif;
+    text-align: justify;
+}
+
+.container2{
+  padding: 5px;
+  margin: auto;
+flex: 2;
+border-radius: 25px;
+background-color: lightgray;
+}
+
+.isaacmiddle{
+  display: flex;
+}
+.next1{
+  margin: auto;
+}
+.isaacbottom{
+  display: flex;
+}
+.container3{
+  margin: auto;
+}
+
+
+input[type=text], textarea{
+  width: 500px;
+  text-align: left;
+
+}
+.bottomform{
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+.isaacimage a{
+  color:  #1684c7;
+}
+
+
+
+
+/*port footer*/
+@media only screen and (max-width: 667px) {
+    .general{
+       display: block;
+   }
+.navbar {
+    width: 230px;
+    padding-bottom: 0px;
+    border-radius: 15px;
+    margin-left: 60px;
+    margin-bottom: 2px;
+  }
+
+  .navbar a {
+    font-size: 20px;
+    display: block;
+
+  }
+  .dropdown {
+    padding-top: 0px;
+    
+  }
+  .dropdown .dropbtn {
+    font-size: 20px;
+    padding: 8px;
+    margin: 0; }
+    .dropdown-content a {
+    padding: 0px;
+
+  }
+  #logo{
+  
+    width: 100px;}
+    #search1{
+    border-radius: 5px;
+    padding: 1px;
+    margin-top: 2px;
+    transform: skewY(0deg);
+   
+}
+#zach{
+  width: 150px;
+  height: auto;
+}
+#searchbar {
+      display: none;
+}
+#button1{
+    display: none;
+}
+.isaactop{
+  display: block;
+}
+
+input[type=text], textarea{
+  width: 300px;
+
+  
+}
+
+
+.portfooter{
+             display: block;
+             }
+
+.footersection a{
+    
+      display: inline-block;
+      padding: 17px 10px;
+      font-size: 15px;
+      }
+}
+</style>
+</head>
+<body>
+    <main>
+        <header >
+            <img src="code-t.png" id="logo" alt="code titans logo">
+            <nav class="navbar">
+                
+                    <a href="index.html">Home</a>
+                    <a href="portfolioabt.html">About us</a>
+                    <div class="dropdown">
+                        <button class="dropbtn">Team Portfolio
+                          <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                          <a href="agrey.html">Agrey</a>
+                          <a href="loyce.html">Loyce</a>
+                          <a href="#">Bahati</a>
+                          <a href="patricia.html">Patricia</a>
+                          <a href="isaac.html">Isaac</a>
+                        </div>
+                      </div>
+                    <a href="projects.html">Projects</a>
+                    <a href="contacts.html">Contact Us</a>
+                    <div class="search3" id="searchbar"> <form action="search" id="search" >
+                        <label for="search"></label>
+                            <input type="search" name="search" id="search1">
+                            <input id="button1" type="submit" name="submit" value="Search">
+                        </form>
+                        </div>
+                        
+            </nav>
+        </header>
+
+
+        <section>
+            <div class="isaactop">
+              <div class="isaacimage">
+               <img src="isaac.jpg" align="top"  id="zach">
+                <h2 class="name">Isaac Amumpaire</h2>
+                <a href=""><i class="fab fa-facebook fa-4x"></i></a>        <a href=""><i class="fab fa-linkedin fa-4x"></i></a> 
+                
+             
+
+              </div>
+            
+              <div class="container2">
+                <h3>Learning to Unlearn</h3>
+                <p>Creative web developer dedicated to building and optimizing the performance of user-centric, high-impact websites for nationwide, F500 and global companies. Leverage technical, analytical and problem-solving skills to create dynamic, high-speed websites, apps and platforms fueling competitive advantage and revenue growth. Contact Isaac on <b><em>0704804491</em></b></p> 
+                <hr>
+                <p><b>Skills:</b> <em>html,wordpress,jquery,css,javascript, typescript,bootstrap</em></p>
+
+              </div>
+            </div>
+  
+        
+          <div class="isaacbottom">
+            <div class="container3">
+              <h3>Contact Isaac</h3>
+              <form action="action_page.php" class="bottomform">
+          
+            
+              <input type="text" id="fname" name="firstname" placeholder="Your name.."><br><br>
+          
+              
+              <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br><br>
+          
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea><br>
+          
+              <input type="submit" value="Submit">
+          
+              </form>
+            </div>
+          </div>
+          
+        </section>
+    
+    
+
+        <!--ORGANISATION FOOTER-->
+
+<hr>
+<div class="portfooter">
+    <div class="footersection"><h2>&copy; CODE TITANS 2020</h2></div>
+    <div class="footersection" id="midlinks"><a href="index.html">Home</a><a href="projects.html">Projects</a><a href="portfolioabt.html">About Us</a><a href="contacts.html">Contact Us</a></div>
+    <div class="footersection"><a href="#"><i class="fab fa-facebook"></i></a> <a href="#"><i class="fab fa-github"></i></a> <a href="#"><i class="fab fa-linkedin"></i></a></div>
+</div>
+</main>
+    
+</body>
+</html>

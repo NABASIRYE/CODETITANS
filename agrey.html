@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="https://kit.fontawesome.com/6416f079ba.js" crossorigin="anonymous"></script>
+
+    <style>
+        *{
+   margin: opx;
+   text-align: center;
+   
+}
+p{ 
+    font-size: 25px;
+    text-align: justify;
+}
+h1{
+  text-align: center;
+  color: white;
+}
+h2{
+  font-size: 30px;
+  text-align: center;
+  color: white;
+}
+/* Navbar container */
+.navbar {
+    overflow: hidden;
+    background-color: #1684C7;
+    width: 1100px;
+    padding-bottom: 10px;
+    border-radius: 15px;
+    margin-left: 135px;
+    font-family: Arial;
+    margin-bottom: 20px;
+  }
+  
+    
+
+
+  /* Links inside the navbar */
+  .navbar a {
+    float: left;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding: 12px 40px ;
+    text-decoration: none;
+    margin-top: 25px;
+  }
+  
+  /* The dropdown container */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+    padding-top: 20px;
+    font-size: 20px;
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 15px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  
+  /* Add a red background color to navbar links on hover */
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color:#EE3324;
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  #logo{
+    float: left;
+    width: 210px;
+ 
+}
+
+#search1{
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 2px;
+    transform: skewY(0deg);
+    border:none;
+    text-align: start;
+}
+
+
+#searchbar {
+        float: right;
+      padding-right: 10px;
+        border-color: none;
+}
+#button1{margin-top: 40px;
+    border: none;
+    border-radius: 2px;
+    padding: 5px 0px;
+    font-size: 15px;
+    background-color: #1684C7;
+}
+
+
+
+/*body content*/
+.firs{
+  display: flex;
+}
+.first{
+  display: flex;
+  background-color: #1684C7;
+  margin: 20px 10px;
+  border-radius: 25px;
+}
+.second{
+  margin: auto;
+}
+
+.image{
+  
+  width: 90%;
+  border-radius: 25px;
+  border-color: #1684c7;
+  border-style: ridge;
+  border-width: 5px;
+}
+#lemitittle {
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+  
+
+}
+#call{
+  color: black;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+
+.aform{
+  width: 400px;
+  align-items: center;
+  box-shadow: inset;
+  margin-top: 0px;
+}
+
+textarea{
+  width: 300px;
+  border-radius: 5px;
+
+}
+
+
+input{
+  width: 300px;
+  height: 20px;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px;
+}
+  
+
+
+
+
+
+
+/*COMPANY FOOTER*/
+.portfooter{background-color:  #1684c7;
+             display: flex;
+             justify-content: space-evenly;
+             color: white;
+             }
+
+.footersection a{
+    color: white;
+      display: inline-block;
+      padding: 17px 10px;
+      font-size: 25px;
+      text-decoration: none;
+      }
+#midlinks a:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+
+
+/*media querry*/
+@media only screen and (max-width: 667px) {
+   .general{
+       display: block;
+   }
+.navbar {
+    width: 230px;
+    padding-bottom: 0px;
+    border-radius: 15px;
+    margin-left: 60px;
+    margin-bottom: 2px;
+  }
+
+  .navbar a {
+    font-size: 20px;
+    display: block;
+
+  }
+  .dropdown {
+    padding-top: 0px;
+    
+  }
+  .dropdown .dropbtn {
+    font-size: 20px;
+    padding: 8px;
+    margin: 0; }
+    .dropdown-content a {
+    padding: 0px;
+
+  }
+  #logo{
+  
+    width: 100px;}
+    #search1{
+    border-radius: 5px;
+    padding: 1px;
+    margin-top: 2px;
+    transform: skewY(0deg);
+   
+}
+#searchbar {
+      display: none;
+}
+#button1{
+    display: none;
+}
+
+/*port footer*/
+
+.portfooter{
+             display: block;
+             }
+
+.footersection a{
+    
+      display: inline-block;
+      padding: 17px 10px;
+      font-size: 15px;
+      }
+    }
+
+
+</style>
+</head>
+<body>
+    <!-- <div id="navbar">
+        <img src="logo.png" alt="" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contactme.html">Contact Details</a></li>
+            </ul>
+        </nav>
+    </div> --><!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>codetitans.com</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/6416f079ba.js" crossorigin="anonymous"></script>
+        
+    </head>
+    <body>
+        <header class="general">
+            <div class="image"> <img src="code-t.png" id="logo" alt="code titans logo"></div>
+             <nav class="navbar">
+                 
+                     <a href="index.html">Home</a>
+                     <a href="portfolioabt.html">About us</a>
+                     <div class="dropdown">
+                         <button class="dropbtn">Team Portfolio
+                           <i class="fa fa-caret-down"></i>
+                         </button>
+                         <div class="dropdown-content">
+                           <a href="agrey.html">Agrey</a>
+                           <a href="loyce.html">Loyce</a>
+                           <a href="bahati.html">Bahati</a>
+                           <a href="patricia.html">Patricia</a>
+                           <a href="isaac.html">Isaac</a>
+                         </div>
+                       </div>
+                     <a href="projects.html">Projects</a>
+                     <a href="contacts.html">Contact Us</a>
+                     <div class="search3" id="searchbar"> <form action="search" id="search" >
+                         <label for="search"></label>
+                             <input type="search" name="search" id="search1" placeholder="Search Profile..">
+                             <input id="button1" type="submit" name="submit" value="Search">
+                         </form>
+                         </div>
+                         
+             </nav>
+         </header>
+
+        
+
+
+
+    <div class="firs">
+      <div class="second" id="lemitittle">
+        Full stack Developer<br><br>
+      I am also a life long learner
+      </div>
+    </div>
+         <div class="firs">
+           
+    <div class="second">
+      
+      <img src="lemi.jpg" alt="" class="image" align="bottom">
+  </div>
+         </div>
+
+
+         <div class="first">
+          <div class="second">
+            <h2>Hello, I am Lemi Agrey Oliver. Nice to meet you. </h2>
+            <p >
+                Since beginning my journey as a freelance full stack developer nearly 2 years ago, I've done remote work 
+                for agencies, consulted for startups, and collaborated with talented people to create digital 
+                products for both business and consumer use. I'm quietly confident, 
+                naturally curious, and perpetually working on improving my chops one design problem at a time. I am also slowly but constantly
+                working on acquiring more backend skills so as to offer better services to the clientelle.
+        
+            </p>
+        </div>
+         </div>
+
+
+         <div class="first">
+                
+        <div class="second">
+          <h2>Full Stack Developer</h2>
+          <p>
+              I like to code things from scratch, and enjoy bringing ideas to life in the browser.
+          </p>
+          <h2>Languages/Skills</h2>
+          <p>HTML/CSS, Javascript, PHP, Java, Node Js, React Js, React Native</p>
+          <h2>Tools</h2>
+          <p>
+              Atom
+              Bitbucket
+              Bootstrap
+              Bracket
+              Netbean
+              Codepen
+              Github
+              VS Code
+              Terminal
+          </p>
+      </div>
+         </div>
+
+         <div class="firs">
+           <div class="second" id="call">
+            Contact Details
+            <p>Reach out on +256-778-842-840 or you complete the form below to make an inquery.</p>
+      
+    
+           </div>
+         </div>
+         <div class="firs">
+          <div class="second">
+        
+
+            <form action="agreylemi@gmail.com" style="justify-content: center;" class="aform">
+                <fieldset>
+                    <legend><em>Want to make an inquery?</em></legend>
+                    <label for="">Subject:</label>
+                    <input type="text" name="" id=""><br>
+                    <label for="">Email</label>
+                    <input type="mail" name=""><br>
+                    <label for="my-textarea">Comment</label><br>
+                    <textarea id="my-textarea" name="" rows="3" cols="10" ></textarea><br>
+                    <button>Submit</button>
+                </fieldset>
+            </form>
+        </div> 
+    
+         </div>
+      
+
+    
+        <!--ORGANISATION FOOTER-->
+
+<hr>
+<div class="portfooter">
+    <div class="footersection"><h2>&copy; CODE TITANS 2020</h2></div>
+    <div class="footersection" id="midlinks"><a href="index.html">Home</a><a href="projects.html">Projects</a><a href="portfolioabt.html">About Us</a><a href="contacts.html">Contact Us</a></div>
+    <div class="footersection"><a href="#"><i class="fab fa-facebook"></i></a> <a href="#"><i class="fab fa-github"></i></a> <a href="#"><i class="fab fa-linkedin"></i></a></div>
+</div>
+</body>
+</html>

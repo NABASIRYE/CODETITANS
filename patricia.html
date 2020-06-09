@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Namara</title>
+        <script src="https://kit.fontawesome.com/6416f079ba.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <style>
+        
+body{
+    font-family:"Arial", Serif;
+    background-color:#f4f4f4;
+    overflow-x:hidden;
+  }
+
+  
+/* Navbar container */
+.navbar {
+    overflow: hidden;
+    background-color: #1684C7;
+    width: 1100px;
+    padding-bottom: 10px;
+    border-radius: 15px;
+    margin-left: 135px;
+    font-family: Arial;
+    margin-bottom: 20px;
+  }
+  
+    
+
+
+  /* Links inside the navbar */
+  .navbar a {
+    float: left;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding: 12px 40px ;
+    text-decoration: none;
+    margin-top: 25px;
+  }
+  
+  /* The dropdown container */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+    padding-top: 20px;
+    font-size: 20px;
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 15px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  
+  /* Add a red background color to navbar links on hover */
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color:#EE3324;
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  #logo{
+    float: left;
+    width: 210px;
+ 
+}
+
+#search1{
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 2px;
+    transform: skewY(0deg);
+    border:none;
+    text-align: start;
+}
+
+
+#searchbar {
+        float: right;
+      padding-right: 10px;
+        border-color: none;
+}
+#button1{
+    margin-top: 40px;
+    border: none;
+    border-radius: 2px;
+    padding: 5px 0px;
+    font-size: 15px;
+    background-color: #1684C7;
+}
+
+
+
+
+  .about-text{
+    text-transform: initial;
+    text-align: left;
+
+
+  }
+
+  .about-image{
+    width: 50%;
+    float: left;
+    margin-right: 20px;
+  }
+
+  .about-image img{
+    width: 100%;
+    height: 500px;
+  }
+
+
+  
+  h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+  }
+
+  i {
+    float: right;
+    text-transform: uppercase;
+    font-weight: bolder;
+  }
+
+  h2 {
+    text-align: center;
+    font-weight: bolder;
+  }
+
+  
+  .contact input, .contact textarea {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #007bff;
+  }
+  
+  .contact textarea {
+    height: 100px;
+  }
+
+   .contact button {
+    border:1px solid white;
+    background-color: #1684C7;
+    padding: 12px;
+    color: white;
+    border-radius: 5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+  }
+
+  .menu {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+  }
+
+  #footer {
+    position: bottom;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+  }
+
+  
+/*COMPANY FOOTER*/
+.portfooter{background-color:  #1684c7;
+             display: flex;
+             justify-content: space-evenly;
+             color: white;
+             }
+
+.footersection a{
+    color: white;
+      display: inline-block;
+      padding: 17px 10px;
+      font-size: 25px;
+      text-decoration: none;
+      }
+#midlinks a:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+
+/*media querry*/
+@media only screen and (max-width: 667px) {
+  .general{
+       display: block;
+   }
+.navbar {
+    width: 230px;
+    padding-bottom: 0px;
+    border-radius: 15px;
+    margin-left: 60px;
+    margin-bottom: 2px;
+  }
+
+  .navbar a {
+    font-size: 20px;
+    display: block;
+
+  }
+  .dropdown {
+    padding-top: 0px;
+    
+  }
+  .dropdown .dropbtn {
+    font-size: 20px;
+    padding: 8px;
+    margin: 0; }
+    .dropdown-content a {
+    padding: 0px;
+
+  }
+  #logo{
+  
+    width: 100px;}
+    #search1{
+    border-radius: 5px;
+    padding: 1px;
+    margin-top: 2px;
+    transform: skewY(0deg);
+   
+}
+#searchbar {
+      display: none;
+}
+#button1{
+    display: none;
+}
+  
+/*port footer*/
+
+.portfooter{
+             display: block;
+             }
+
+.footersection a{
+    
+      display: inline-block;
+      padding: 17px 10px;
+      font-size: 15px;
+      }
+    }
+
+      </style>
+      </head>
+
+<body>
+    <div id="webpage">
+      
+      <header class="general">
+        <div class="image"> <img src="code-t.png" id="logo" alt="code titans logo"></div>
+         <nav class="navbar">
+             
+                 <a href="index.html">Home</a>
+                 <a href="portfolioabt.html">About us</a>
+                 <div class="dropdown">
+                     <button class="dropbtn">Team Portfolio
+                       <i class="fa fa-caret-down"></i>
+                     </button>
+                     <div class="dropdown-content">
+                       <a href="agrey.html">Agrey</a>
+                       <a href="loyce.html">Loyce</a>
+                       <a href="bahati">Bahati</a>
+                       <a href="patricia.html">Patricia</a>
+                       <a href="isaac.html">Isaac</a>
+                     </div>
+                   </div>
+                 <a href="projects.html">Projects</a>
+                 <a href="contacts.html">Contact Us</a>
+                 <div class="search3" id="searchbar"> <form action="search" id="search" >
+                     <label for="search"></label>
+                         <input type="search" name="search" id="search1" placeholder="Search Profile..">
+                         <input id="button1" type="submit" name="submit" value="Search">
+                     </form>
+                     </div>
+                     
+         </nav>
+     </header>
+    <br><br><br>
+
+  <h1>NAMARA PATRICIA CHRISTINE</h1>
+
+  <div class="About-me" id="about">
+    
+    <div class="about-image">
+      <img src="Namara.jpg" alt=" A photo of Namara Smiling">
+    </div>
+    <div class="about-text">
+      <h3>A LITTLE ABOUT ME</h3>
+      <b>Junior developer</b><br>
+        I am passionate about Technology and I strive to learn new things and challenge my abilities daily by finding out new
+        and better ways of doing things.<br><br>
+      I Love data, Reading books, going out with my friends, I love food too<br><br>
+               <b>What I can do</b>
+                   <li>HTML</li>
+                   <li>PHP</li>
+                   <li>Social Media Marketing</li>
+                   <li>Database Administration</li>
+                   <li>Digital Marketing</li><br>
+
+      <p>
+        <b>What I am working On now</b><br>
+             <li>I am taking a prep course at web developing outbox </li>
+             <li>Taking different Online courses</li>
+             <li>Working part time in different organizations</li>
+      </p>
+
+      <p> I can be contacted on the following numbers:<br>
+          1.0703482951<br>
+          2. 0783482899<br><br>
+         I am also on Twitter, facebook, Instagram & WhatsApp and some of my work can be found there.
+          
+      </p>
+                
+      <br><br>
+  </div>
+</div>
+
+
+  <div id="contact" class="contact">
+         <h2>Send me your Feedback</h2>
+              <form>
+                <input type="text" name="" placeholder="Your Name"><br><br>
+                <input type="text" name="" placeholder="Your Email"><br><br>
+                <textarea placeholder="Your Message"></textarea>
+                <button>Send Message</button>
+              </form>
+            </div><br><br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+         <footer id="footer"> 
+          <nav class="menu">
+            <a href="index.html">home</a>
+            <a href="">help</a>
+            <a href="">privacy policy</a>
+            <a href="">contact</a>
+        </nav>
+        <nav class="menu">
+            <a href="">facebook</a>
+            <a href="">twitter</a>
+            <a href="">instagram</a>
+            <a href="">whatsapp</a>
+        </nav>
+         </footer><br><br>
+         
+
+        <!--ORGANISATION FOOTER-->
+
+<hr>
+<div class="portfooter">
+    <div class="footersection"><h2>&copy; CODE TITANS 2020</h2></div>
+    <div class="footersection" id="midlinks"><a href="">Home</a><a href="">Projects</a><a href="portfolioabt.html">About Us</a><a href="">Contact Us</a></div>
+    <div class="footersection"><a href="#"><i class="fab fa-facebook"></i></a> <a href="#"><i class="fab fa-github"></i></a> <a href="#"><i class="fab fa-linkedin"></i></a></div>
+</div>
+
+      
+
+        
+       
+      
+   </div>
+    </body>
+</html>
