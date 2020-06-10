@@ -223,15 +223,19 @@ input{
 
 /*media querry*/
 @media only screen and (max-width: 667px) {
-   .general{
+  .general{
        display: block;
    }
 .navbar {
-    width: 230px;
+    display: flex;
+    width: 300px;
+    height: auto;
+    margin: 0px 5px;
     padding-bottom: 0px;
     border-radius: 15px;
-    margin-left: 60px;
-    margin-bottom: 2px;
+  }
+  .innernavbar{
+    margin: auto;
   }
 
   .navbar a {
@@ -251,9 +255,14 @@ input{
     padding: 0px;
 
   }
+  #image{
+    width: 300px;
+    height: auto;
+    margin: 0px 5px;
+  }
   #logo{
   
-    width: 100px;}
+    width: 300px;}
     #search1{
     border-radius: 5px;
     padding: 1px;
@@ -308,7 +317,7 @@ input{
         <header class="general">
             <div class="image"> <img src="code-t.png" id="logo" alt="code titans logo"></div>
              <nav class="navbar">
-                 
+                 <div class="innernav">
                      <a href="index.html">Home</a>
                      <a href="portfolioabt.html">About us</a>
                      <div class="dropdown">
@@ -331,7 +340,7 @@ input{
                              <input id="button1" type="submit" name="submit" value="Search">
                          </form>
                          </div>
-                         
+                 </div>          
              </nav>
          </header>
 

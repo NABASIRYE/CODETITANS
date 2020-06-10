@@ -211,15 +211,19 @@ input[type=text], textarea{
 
 /*port footer*/
 @media only screen and (max-width: 667px) {
-    .general{
+  .general{
        display: block;
    }
 .navbar {
-    width: 230px;
+    display: flex;
+    width: 300px;
+    height: auto;
+    margin: 0px 5px;
     padding-bottom: 0px;
     border-radius: 15px;
-    margin-left: 60px;
-    margin-bottom: 2px;
+  }
+  .innernavbar{
+    margin: auto;
   }
 
   .navbar a {
@@ -239,9 +243,14 @@ input[type=text], textarea{
     padding: 0px;
 
   }
+  #image{
+    width: 300px;
+    height: auto;
+    margin: 0px 5px;
+  }
   #logo{
   
-    width: 100px;}
+    width: 300px;}
     #search1{
     border-radius: 5px;
     padding: 1px;
@@ -249,15 +258,15 @@ input[type=text], textarea{
     transform: skewY(0deg);
    
 }
-#zach{
-  width: 150px;
-  height: auto;
-}
 #searchbar {
       display: none;
 }
 #button1{
     display: none;
+}
+#zach{
+  width: 150px;
+  height: auto;
 }
 .isaactop{
   display: block;
@@ -288,7 +297,7 @@ input[type=text], textarea{
         <header >
             <img src="code-t.png" id="logo" alt="code titans logo">
             <nav class="navbar">
-                
+                <div class="innernav">
                     <a href="index.html">Home</a>
                     <a href="portfolioabt.html">About us</a>
                     <div class="dropdown">
@@ -311,7 +320,7 @@ input[type=text], textarea{
                             <input id="button1" type="submit" name="submit" value="Search">
                         </form>
                         </div>
-                        
+                </div>       
             </nav>
         </header>
 
